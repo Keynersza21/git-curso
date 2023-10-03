@@ -6,7 +6,7 @@ import Registro from './Pages/Registro';
 function App() {
   return (
     <div>
-     <Registro/>
+     <Registro />
     </div>
   );
 }
