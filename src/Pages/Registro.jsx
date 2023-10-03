@@ -6,7 +6,12 @@ const Registro = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    const [username, setUsername] = useState("")
+    const [holaMundoe, setholaMundoe] = useState("")
+    const [holaMundor, setholaMundor] = useState("")
+    const [holaMundot, setholaMundot] = useState("")
+    const [holaMundoy, setholaMundoy] = useState("")
+    const [holaMundou, setholaMundou] = useState("")
+    const [holaMundoi, setholaMundoi] = useState("")
     const {register} = Login()
 
  const registrarse  = async (e) =>{
