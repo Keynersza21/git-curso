@@ -6,6 +6,7 @@ const Registro = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [username, setUsername] = useState("")
     const {register} = Login()
 
  const registrarse  = async (e) =>{
@@ -19,11 +20,11 @@ const Registro = () => {
  
   return (
     <div>
-<form onSubmit={registrarse}>
+    <form onSubmit={registrarse}>
     <input type="text"   name='email'  onChange={(e) => setEmail(e.target.value)} value={email}required/>
     <input type="number" name='password' onChange={(e) => setPassword(e.target.value)} value={password} required/>
     <input type="submit" placeholder='Enviar'/>
-</form>
+    </form>
     </div>
   )
 }
