@@ -14,7 +14,7 @@ const Registro = () => {
     setTimeout(() => {
       console.log('registrado')
       navigate('/iniciar')
-    }, 2500);
+    }, 2700);
  }
  
   return (
