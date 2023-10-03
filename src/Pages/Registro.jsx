@@ -10,6 +10,7 @@ const Registro = () => {
     e.preventDefault()
     await register(email, password)
     console.log('registrado')
+    console.log('Te has logueado correctamente!!')
  }
  
   return (
