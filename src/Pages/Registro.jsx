@@ -8,6 +8,7 @@ const Registro = () => {
     const [password, setPassword] = useState("")
     const [holaMundoe, setholaMundoe] = useState("")
     const [holaMundor, setholaMundor] = useState("")
+    const [holaMundoDenuevo, setholaMundoDenuevo] = useState("")
     
     const {register} = Login()
 
