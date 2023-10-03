@@ -6,5 +6,9 @@ export const Login = () => {
     const register = ( email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
     } 
-    return {register}
+
+    const iniciar = ( email, password) => {
+        signInWithEmailAndPassword(auth, email, password)
+    } 
+    return {register, iniciar}
 }
