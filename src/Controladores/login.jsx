@@ -1,4 +1,4 @@
-import {  createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth";
+import {  createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword} from "firebase/auth";
 import { auth } from "../components/Fireabse/firebase";
 
 
@@ -9,6 +9,10 @@ export const Login = () => {
 
     const iniciar = ( email, password) => {
         signInWithEmailAndPassword(auth, email, password)
+        onAuthStateChanged(auth, (user) =>{
+            let usuario = user.uid
+            localStorage.setItem('idToke', usuario.email)
+        })
     } 
     return {register, iniciar}
 }
